@@ -57,5 +57,12 @@
             </group>
         </step>
     </group>
+    <group eventID="3" id="1">
+        <incdec comment="false" x="222" y="322">
+            <int id="0" val="1"/>
+            <int id="1" val="0"/>
+            <int id="2" val=""/>
+        </incdec>
+    </group>
     <group eventID="3" id="-1"/>
 </groups>

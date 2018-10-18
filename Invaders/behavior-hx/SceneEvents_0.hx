@@ -115,6 +115,19 @@ class SceneEvents_0 extends SceneScript
 			}
 		});
 		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(10));
+				if(_Win)
+				{
+					g.drawString("" + "You Win!", 300, 240);
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)
