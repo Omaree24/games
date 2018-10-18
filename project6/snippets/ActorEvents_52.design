@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-game-val-3 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                </set-game-val-3>
+                <set-game-val-2 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                </set-game-val-2>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-game-att comment="false" x="26" y="47">
+                    <int id="0" val="Health Points"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.5"/>
+                    </minus>
+                </set-game-att>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actorgroup eid="3" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <toggle-image comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </toggle-image>
+                <push-shove comment="false" x="26" y="74">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                    </minus>
+                    <minus comment="false" id="3" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-xy>
+                    </minus>
+                    <int id="4" val="10000"/>
+                </push-shove>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actorgroup eid="3" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
